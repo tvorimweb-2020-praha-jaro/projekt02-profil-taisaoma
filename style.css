@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -13,7 +19,95 @@ html { box-sizing: border-box; }
  twitter    #1da1f2
 */
 
-
 body {
-    background-color: #bdc3c7;
+  background-color: #bdc3c7;
+}
+.profil {
+  background-color: #31363b;
+  box-shadow: 2px 5px 10px 0px rgba(49, 40, 40, 0.7);
+  color: #bdc3c7;
+  width: 250px;
+}
+
+.obsah {
+  padding: 10px 20px;
+}
+
+.jmeno {
+  color: azure;
+  font-family: "Montserrat";
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+.obsah p {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.foto {
+  width: 250px;
+}
+
+.logo {
+  background-color: #b92e81;
+  border-radius: 50%;
+  box-shadow: 2px 5px 10px 0px rgba(49, 40, 40, 0.7);
+  position: absolute;
+  top: 150px;
+  left: 180px;
+}
+
+.odkazy {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3f464d;
+  text-align: center;
+  width: 250px;
+}
+
+.facebook,
+.twitter {
+  text-align: center;
+  width: 123px;
+}
+
+.odkazy li {
+  display: inline-block;
+}
+
+.odkazy a {
+  color: #bdc3c7;
+  display: block;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.portfolio a:hover,
+.portfolio a:focus {
+  background-color: #e74c3c;
+  color: azure;
+}
+
+.facebook a:hover,
+.facebook a:focus {
+  background-color: #3b5998;
+  color: azure;
+}
+
+.twitter a:hover,
+.twitter a:focus {
+  background-color: #1da1f2;
+  color: azure;
 }
